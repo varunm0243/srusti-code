@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Footer from "./components/footer/Footer";
+import Navbar from "./components/header/header";
+import Sidebar from "./components/sidebar/sidebar";
+import MainPage from "./pages/mainPage";
+import CarouselComponent from "./components/coursel/Coursel";
+import IntroductionBox from "./components/content/IntroductionBox";
+import InfoCarousel from "./components/coursel/InfoCarousel";
+import MultiItemCarousel from "./components/coursel/MultiItemCarousel";
+import MultiItemCarouselText from "./components/coursel/MultiItemCarouselOnlyText";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <Navbar />
+      <div className="row">
+        <div className="col-lg-2">
+          <Sidebar />
+        </div>
+        <div className="col-lg-10">
+          <div className="row">
+            <IntroductionBox />
+            {/* <CarouselComponent /> */}
+            <MultiItemCarousel />
+            <InfoCarousel />
+
+            <MultiItemCarouselText />
+
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }

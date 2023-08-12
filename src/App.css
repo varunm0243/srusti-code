@@ -28,6 +28,23 @@
   color: #61dafb;
 }
 
+.app-container {
+  min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+  position: relative; /* Establish a context for absolutely positioned elements */
+  padding-bottom: 60px; /* Adjust the value based on your footer's height */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex-grow: 1;
+  position: relative; /* Establish a context for absolute positioning */
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

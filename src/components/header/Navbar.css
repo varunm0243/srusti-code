@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #3a67f9;
   color: white;
 }
 
@@ -19,7 +19,7 @@
 
 .search-bar button {
   padding: 5px 10px;
-  background-color: #555;
+  background-color: #1e70c3;
   color: white;
   border: none;
   cursor: pointer;
@@ -31,3 +31,4 @@
   border-radius: 50%;
   cursor: pointer;
 }
+

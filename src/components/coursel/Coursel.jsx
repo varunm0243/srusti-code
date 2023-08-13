@@ -2,7 +2,7 @@ import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import abc from '../images/img2.jpg'
-import xyz from '../images/img1.webp'
+import xyz from '../images/power automate.png';
 import './CarouselComponent.css'; // You can create a CSS file for styling
 
 const CarouselComponent = () => {

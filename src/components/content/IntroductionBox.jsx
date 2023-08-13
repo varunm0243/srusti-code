@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import profileImage from '../images/myprofile.jpg';
-import background from '../images/background.jpg' // Replace with your image path
+import bg from '../images/image1.jpg';
+
 
 const IntroductionContainer = styled.div`
+background-image: url(${bg});
   // background-color: red;
   background-image: {background}
   border: 1px solid #ccc;
@@ -16,8 +17,11 @@ const IntroductionContainer = styled.div`
   margin-top: 10px;
 `;
 
+
+
 const TextContainer = styled.div`
   margin-left: 20px;
+  align-text: center;
 `;
 
 const Name = styled.h2`
@@ -40,12 +44,18 @@ const ProfileImage = styled.img`
 const IntroductionBox = () => {
   return (
     <IntroductionContainer>
-      <ProfileImage src={profileImage} alt="Profile" />
+      {/* <ProfileImage src={profileImage} alt="Profile" /> */}
       <TextContainer>
-        <Name>Srusti S</Name>
-        <ContactNumber>Contact: 9886083584</ContactNumber>
+        {/* <Name>Hello, Srusti S</Name> */}
+        <p>Hello, Srusti
+          <br/>
+    Create a flow to automate a repetitive business task end to end.</p>
+    <button type="button">Create +</button>
+
+        {/* <ContactNumber>Contact: 9886083584</ContactNumber> */}
       </TextContainer>
     </IntroductionContainer>
+   
   );
 };
 

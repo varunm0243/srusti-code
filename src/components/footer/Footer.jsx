@@ -75,21 +75,7 @@ export default function App() {
       style={{ position: "inherit" }}
       className="text-center text-lg-start text-muted footer"
     >
-      <FooterContainer>
-        <p>&copy; 2023 Nokia. All rights reserved.</p>
-        <SocialIconsContainer>
-          <SocialIcon href="https://www.facebook.com/">
-            <FontAwesomeIcon icon={faFacebookSquare} />
-          </SocialIcon>
-          <SocialIcon href="https://www.twitter.com/">
-            <FontAwesomeIcon icon={faTwitterSquare} />
-          </SocialIcon>
-          <SocialIcon href="https://www.instagram.com/">
-            <FontAwesomeIcon icon={faInstagramSquare} />
-          </SocialIcon>
-          {/* Add more social media icons as needed */}
-        </SocialIconsContainer>
-      </FooterContainer>
+      
 
       <section className="">
         <MDBContainer className="text-center text-md-start mt-5">
@@ -97,12 +83,20 @@ export default function App() {
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">
                 <MDBIcon color="secondary" icon="gem" className="me-3" />
-                Company name
+               Platforms
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+                Power Platform
+                <br/>
+                Overview
+                <br/>
+                Power Automate
+                <br/>
+                Power Apps
+                <br/>
+                Power BI
+                <br/>
+                Power Virtual Agents
               </p>
             </MDBCol>
 
@@ -134,7 +128,7 @@ export default function App() {
               <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
               <p>
                 <a href="#!" className="text-reset">
-                  Pricing
+                  Share
                 </a>
               </p>
               <p>
@@ -144,7 +138,7 @@ export default function App() {
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Orders
+                  FAQ's
                 </a>
               </p>
               <p>
@@ -158,7 +152,7 @@ export default function App() {
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
               <p>
                 <MDBIcon color="secondary" icon="home" className="me-2" />
-                New York, NY 10012, US
+                Karakaari. 02610 Espoo, Finland
               </p>
               <p>
                 <MDBIcon color="secondary" icon="envelope" className="me-3" />
@@ -176,6 +170,23 @@ export default function App() {
           </MDBRow>
         </MDBContainer>
       </section>
+      <FooterContainer>
+        <p>&copy; 2023 Nokia. All rights reserved.</p>
+        <SocialIconsContainer>
+          <SocialIcon href="https://www.facebook.com/">
+            <FontAwesomeIcon icon={faFacebookSquare} />
+          </SocialIcon>
+          <SocialIcon href="https://www.twitter.com/">
+            <FontAwesomeIcon icon={faTwitterSquare} />
+          </SocialIcon>
+          <SocialIcon href="https://www.instagram.com/">
+            <FontAwesomeIcon icon={faInstagramSquare} />
+          </SocialIcon>
+      <h6>privacy and policy</h6>
+          {/* Add more social media icons as needed */}
+        </SocialIconsContainer>
+      </FooterContainer>
     </MDBFooter>
+
   );
 }

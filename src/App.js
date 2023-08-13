@@ -27,9 +27,10 @@ function App() {
             <MultiItemCarouselText />
 
           </div>
+          <Footer />
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 }

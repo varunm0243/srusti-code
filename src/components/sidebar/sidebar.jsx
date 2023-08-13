@@ -51,8 +51,9 @@ import {
 //import icons from react icons
 import { FaList, FaRegHeart } from "react-icons/fa";
 import { FiHome, FiLogOut, FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
-import { RiPencilLine } from "react-icons/ri";
-import { BiCog } from "react-icons/bi";
+import { IoIosAdd } from "react-icons/io";
+import { BsFillDiagram2Fill , BsActivity, BsDatabase, BsBuildingsFill} from "react-icons/bs";
+import { CiTimer } from "react-icons/ci";
 
 
 //import sidebar css from react-pro-sidebar module and our custom css 
@@ -79,7 +80,7 @@ const Sidebar = () => {
           <SidebarHeader>
           <div className="logotext">
               {/* small and big change using menucollapse state */}
-              <p>{menuCollapse ? "Logo" : "Big Logo"}</p>
+              <p>{menuCollapse ? "Menu" : " Main Menu"}</p>
             </div>
             <div className="closemenu" onClick={menuIconClick}>
                 {/* changing menu collapse icon on click */}
@@ -95,10 +96,12 @@ const Sidebar = () => {
               <MenuItem active={true} icon={<FiHome />}>
                 Home
               </MenuItem>
-              <MenuItem icon={<FaList />}>Category</MenuItem>
-              <MenuItem icon={<FaRegHeart />}>Favourite</MenuItem>
-              <MenuItem icon={<RiPencilLine />}>Author</MenuItem>
-              <MenuItem icon={<BiCog />}>Settings</MenuItem>
+              <MenuItem icon={<BsDatabase />}>Data</MenuItem>
+              <MenuItem icon={<IoIosAdd />}>create</MenuItem>
+              <MenuItem icon={<BsActivity />}>Monitor</MenuItem>
+              <MenuItem icon={<BsFillDiagram2Fill />}>My Flows</MenuItem>
+              <MenuItem icon={<CiTimer />}>Approvals</MenuItem>
+              <MenuItem icon={<BsBuildingsFill />}>Template</MenuItem>
             </Menu>
           </SidebarContent>
           <SidebarFooter>

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import InfoBox from '../content/InfoBoxContainer';
+ import InfoBox from '../content/InfoBoxContainer';
 
 const CustomCarousel = styled(Carousel)`
   .carousel .slider-wrapper {
@@ -29,15 +29,17 @@ const InfoCarouselContainer = styled.div`
   width: 90%;
 `;
 
-const InfoCarousel = () => {
+ const InfoCarousel = () => {
   const infoData = [
     {
-      title: 'Project 1',
-      description: 'Description of Project 1.',
+       title: 'Project 1',
+    description: 'Discover Robotic Process Automation (RPA) with zero infrastructure.',
+      
     },
     {
       title: 'Project 2',
       description: 'Description of Project 2.',
+  
     },
     // Add more data as needed
   ];
@@ -61,6 +63,8 @@ const InfoCarousel = () => {
             />
           </div>
         ))}
+        
+       
       </CustomCarousel>
     </InfoCarouselContainer>
   );

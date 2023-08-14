@@ -1,7 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import bg from '../images/image1.jpg';
-
+import React from "react";
+import styled from "styled-components";
+import bg from "../images/image1.jpg";
 
 const IntroductionContainer = styled.div`
 background-image: url(${bg});
@@ -18,8 +17,6 @@ background-image: url(${bg});
   justify-content: center;
 `;
 
-
-
 const TextContainer = styled.div`
   margin-left: 20px;
   align-text: center;
@@ -34,7 +31,8 @@ const Description = styled.p`
   font-size: 20px;
 `;
 const Button = styled.button`
-text-align: center;
+  text-align: center;
+  justify-content: center;
 `;
 const ContactNumber = styled.p`
   font-size: 18px;
@@ -51,22 +49,16 @@ const ProfileImage = styled.img`
 const IntroductionBox = () => {
   return (
     <IntroductionContainer>
-      {/* <ProfileImage src={profileImage} alt="Profile" /> */}
       <TextContainer>
         <Name>Hello, Srusti S</Name>
-
-        {/* <p>Hello, Srusti
-          <br/>
-    Create a flow to automate a repetitive business task end to end.</p> */}
-    <Description>
-    Create a flow to automate a repetitive business task end to end.
-    </Description>
-    <Button type="button">Create +</Button>
-
-        {/* <ContactNumber>Contact: 9886083584</ContactNumber> */}
+        <Description>
+          Create a flow to automate a repetitive business task end to end.
+        </Description>
+        <div style={{ margin: "auto", width: "20%" }}>
+          <Button type="button">Create +</Button>
+        </div>
       </TextContainer>
     </IntroductionContainer>
-   
   );
 };
 

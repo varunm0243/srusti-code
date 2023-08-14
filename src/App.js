@@ -20,15 +20,13 @@ function App() {
         <div className="col-lg-10">
           <div className="row">
             <IntroductionBox />
-            {/* <CarouselComponent /> */}
             <MultiItemCarousel />
             <InfoCarousel />
-
             <MultiItemCarouselText />
-
           </div>
-          <Footer />
         </div>
+        <Footer />
+
       </div>
       
     </div>

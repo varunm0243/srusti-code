@@ -24,7 +24,6 @@ const CustomCarousel = styled(Carousel)`
 `;
 
 const InfoCarouselContainer = styled.div`
-  margin-top: 30px;
   margin-left: 50px;
   width: 90%;
 `;

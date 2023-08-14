@@ -51,6 +51,7 @@ const FooterContainer = styled.footer`
   color: white;
   padding: 20px;
   text-align: center;
+  width: 100%;
 `;
 
 const SocialIconsContainer = styled.div`
@@ -72,7 +73,7 @@ export default function App() {
   return (
     <MDBFooter
       bgColor="light"
-      style={{ position: "inherit" }}
+    //   style={{ position: "inherit" }}
       className="text-center text-lg-start text-muted footer"
     >
       

@@ -1,10 +1,26 @@
-// 
+//
 import React from "react";
 import "./Navbar.css"; // Import the CSS file for styling
 import { DiAptana } from "react-icons/di";
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
-import { BsQuestionLg } from "react-icons/bs";
 import profile from ".././images/peakpx.jpg";
+import styled from "styled-components";
+
+const Description = styled.p`
+  font-size: 14px;
+  margin: 5px;
+`;
+
+const Profile = styled.p`
+  font-size: 14px;
+  margin: 5px;
+`;
+
+const StylesDiv = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
 
 const Navbar = () => {
   return (
@@ -15,15 +31,18 @@ const Navbar = () => {
       <div className="search-bar">
         <input type="text" placeholder="Search..." />
         <button>Search</button>
-        <p>Nokia Environment(default)</p>
-        <p>&emsp;</p>
+      </div>
+      <StylesDiv>
+        <Description>Nokia Environment(default)</Description>
+        {/* <p>&emsp;</p> */}
         <DiAptana />
-        <BsQuestionLg />
-        <p>Damon Salvatore</p>
-      </div>
-      <div className="profile-icon">
+      </StylesDiv>
+      {/* <BsQuestionLg /> */}
+      <StylesDiv className="profile-icon">
+        <Profile>Damon Salvatore</Profile>
+
         <img src={profile} alt="profile" />
-      </div>
+      </StylesDiv>
     </div>
   );
 };

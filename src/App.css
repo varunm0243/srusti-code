@@ -28,11 +28,11 @@
   color: #61dafb;
 }
 
-.app-container {
-  min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
-  position: relative; /* Establish a context for absolutely positioned elements */
-  padding-bottom: 60px; /* Adjust the value based on your footer's height */
-}
+/* .app-container {
+  min-height: 100vh; 
+  position: relative;
+  padding-bottom: 60px; 
+} */
 
 .app-container {
   display: flex;
